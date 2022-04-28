@@ -1,0 +1,12 @@
+echo "[Unit]
+Description=Device Monitor App
+
+[Service]
+User=sixfab
+Restart=always
+Group=sudo
+RestartSec=3
+ExecStart=/usr/bin/python3 /opt/sixfab/test_device-monitor-app/run.py
+
+[Install]
+WantedBy=multi-user.target"

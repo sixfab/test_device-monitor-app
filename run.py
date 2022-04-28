@@ -1,4 +1,3 @@
-from ast import operator
 import time
 import os
 import subprocess
@@ -16,7 +15,7 @@ CONFIG_PATH = CONFIG_FOLDER_PATH + "config.yaml"
 SYSTEM_PATH = CONNECT_FOLDER_PATH + "system.yaml"
 MONITOR_PATH = CONNECT_FOLDER_PATH + "monitor.yaml"
 GEOLOCATION_PATH = CONNECT_FOLDER_PATH + "geolocation.yaml"
-DIAG_FILE_PATH = DIAG_FOLDER_PATH + "diagnostic.yaml" 
+DIAG_FILE_PATH = DIAG_FOLDER_PATH + "diagnostic.yaml"
 
 # Test App Paths
 APP_USER_PATH = os.path.expanduser("~")
@@ -136,8 +135,8 @@ if __name__ == "__main__":
 
         #print(test_res)
 
-        with open(APP_MONITOR_PATH, 'a') as file:
-            file.write(test_res)
+        with open(APP_MONITOR_PATH, 'a') as app_file:
+            app_file.write(test_res)
 
         time.sleep(PERIOD)
         
