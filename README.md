@@ -3,6 +3,11 @@ An application for monitoring network info, internet speed and other required de
 
 # Installation
 
+Install speedtest-cli
+```
+sudo pip3 install speedtest-cli
+```
+
 Download sources
 ```
 git clone https://github.com/sixfab/test_device-monitor-app.git
