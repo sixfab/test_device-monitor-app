@@ -119,12 +119,12 @@ if __name__ == "__main__":
         # get cpu temperature of raspberry pi
         logger.info("CPU Temperature running...")
         try:
-            output = shell_command("vcgencmd measure_temp")
+            output = shell_command("sudo vcgencmd measure_temp")
         except:
             logger.error("Error in vcgencmd measure_temp")
         else:
             logger.info("CPU Temperature finished")
-            cpu_temp = output[0].split("=")[1]
+            cpu_temp = output[0].split("=")[1].split("'")[0]
             test_res += f"CPU Temp:{cpu_temp};"
 
         for data in geolocation_data:

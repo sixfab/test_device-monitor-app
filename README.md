@@ -15,7 +15,7 @@ sudo mv test_device-monitor-app/device-monitor-app.service /etc/systemd/system/
 
 Copy files to path
 ```
-sudo cp test_device-monitor-app /opt/sixfab/
+sudo cp -r test_device-monitor-app /opt/sixfab/
 ```
 
 Enable and start service
