@@ -107,7 +107,7 @@ if __name__ == "__main__":
         signaL_quality = monitor_data["signal_quality"]
         roaming_operator = monitor_data["roaming_operator"]
 
-        test_res = f"TS:{time.strftime('%Y-%m-%d %H:%M:%S')};"
+        test_res = f"TS:{time.strftime('%Y-%m-%d %H-%M-%S')};"
         test_res += f"Active Int:{active_interface};"
         test_res += f"LTE Tech:{active_lte_tech};"
         test_res += f"Signal Quality:{signaL_quality};"
